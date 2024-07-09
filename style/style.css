@@ -1,0 +1,124 @@
+:root {
+    --cor--primaira: #000;
+    --cor--secundaria: #22D4FD;
+    --color--terciaria: #f6f6f6;
+    --cor--hover: #272727;
+  
+    --font-primaria: "Krona One", sans-serif;
+    --font-secundaria: "Montserrat", sans-serif;
+  }
+*
+ { 
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    height: 100vh;
+    background-color: var(--cor--primaira);
+    box-sizing: border-box;
+    color: var(--cor--secundaria);
+}
+
+.imagem_header{
+    width: 40px;
+    height: 40px;
+}
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px;
+    border-radius: 5px;
+  }
+.container_esquerda{
+    display: flex;
+    flex-direction: column;
+}
+.container_direita{
+    display: flex;
+    text-align: center;
+    gap: 10px;
+}
+.outputContainer {
+    display: flex;
+    align-self:flex-end;
+    justify-content: space-between;
+    border: 3px solid #ccc;
+    border-radius: 32px;
+    height: 900px;
+    width: 400px;
+    top: 40px;
+    margin: 10px;
+    left: 50px;
+}
+.msg{
+    font-size: 12px;
+    color: #495057;
+    font-family: var(--font-secundaria);
+}
+  .textarea {
+    width: 680px;
+    height: 640px;
+    padding: 10px;
+    resize: none;
+    border: none;
+    color: #0A3871;
+    font-size: 32px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: center;
+    justify-content: space-evenly;
+    color: #0A3871;
+    gap: 10px;
+  }
+  .Botao {
+    display: flex;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #D8DFE8 ;
+    color: #0A3871;
+    font-size: 16px;
+  }
+  .Botao:hover {
+    background-color: #0A3871;
+    color: #D8DFE8;
+  }
+  .output {
+    display: flex;
+    margin: auto;
+    gap: 10px;
+    padding: 10px;
+    border: none;
+    width: 336px;
+    height: 781px;
+    margin-left: 10px;
+    font-size: 24px;
+    
+  }
+  .copy-button {
+    margin-top: 10px;
+    line-break: auto;
+  }
+ 
+.hidden{
+    display: none;
+}
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-style: oblique;
+    color: #888;
+    gap: 10px;
+}
+.imagem_pesquisa {
+    margin:  50%;
+    width: auto;
+}

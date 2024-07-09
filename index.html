@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decodificador - 1 Desktop</title>
+  <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <img class="imagem_header" src="/assets/Frame 6.svg" alt="Frame 6" />
+    <div class="container">
+        <div class="container_esquerda">
+            <textarea class="textarea" id="inputText"  placeholder="Digite seu texto"></textarea>
+            <p class="msg"><img src="/assets/bi_exclamation-circle-fill.svg">Letras minúsculas e sem acento.</p>
+
+            <div class="buttons">
+                <button class="Botao" id="encryptButton">Criptografar</button>
+                <button class="Botao" id="decryptButton">Descriptografar</button>
+            </div>
+        </div>
+        <div class="container_direita">
+            <div class="outputContainer" id="outputContainer">
+                <div class="placeholder" id="placeholder">
+                    <img id="image" class="imagem_pesquisa" src="/assets/High quality products 1 1.svg" alt="Placeholder Image">
+                    <p class="msg">"Nenhuma mensagem encontrada"</p>
+                    <p></p>
+                    <input class="output" type="text" id="outputText" readonly>
+                    <p id="outputText" class="hidden"></p>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
